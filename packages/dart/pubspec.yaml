@@ -1,0 +1,22 @@
+name: kurdish_sorani
+description: >-
+  Kurdish (Sorani) toolkit for Dart and Flutter: fix Arabic-keyboard text,
+  Kurdish digits, Iraqi Dinar formatting, number-to-words and Iraqi phone
+  number validation. Pure Dart, no dependencies.
+version: 0.1.0
+homepage: https://universeitgroup.co.uk
+repository: https://github.com/OWNER/kurdish-sorani
+issue_tracker: https://github.com/OWNER/kurdish-sorani/issues
+topics:
+  - kurdish
+  - localization
+  - i18n
+  - validation
+  - rtl
+
+environment:
+  sdk: ^3.5.0
+
+dev_dependencies:
+  lints: ^5.0.0
+  test: ^1.25.0

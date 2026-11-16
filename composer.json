@@ -1,0 +1,36 @@
+{
+    "name": "universeitgroup/kurdish-sorani",
+    "description": "Kurdish (Sorani) toolkit for Laravel: text normalization, Kurdish digits, IQD formatting, number-to-words, Iraqi phone validation and ckb translations.",
+    "keywords": ["kurdish", "sorani", "ckb", "laravel", "iraq", "iqd", "localization", "rtl"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        { "name": "Universe IT Group", "homepage": "https://universeitgroup.co.uk" }
+    ],
+    "require": {
+        "php": "^8.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5 || ^11.0",
+        "orchestra/testbench": "^8.0 || ^9.0 || ^10.0"
+    },
+    "suggest": {
+        "illuminate/support": "Required for the Laravel service provider, validation rule and middleware."
+    },
+    "autoload": {
+        "psr-4": { "UniverseIT\\KurdishSorani\\": "packages/laravel/src/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "UniverseIT\\KurdishSorani\\Tests\\": "packages/laravel/tests/" }
+    },
+    "extra": {
+        "laravel": {
+            "providers": ["UniverseIT\\KurdishSorani\\KurdishSoraniServiceProvider"]
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
