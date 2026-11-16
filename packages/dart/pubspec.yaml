@@ -5,8 +5,8 @@ description: >-
   number validation. Pure Dart, no dependencies.
 version: 0.1.0
 homepage: https://universeitgroup.co.uk
-repository: https://github.com/OWNER/kurdish-sorani
-issue_tracker: https://github.com/OWNER/kurdish-sorani/issues
+repository: https://github.com/AkamBarznji/kurdish-sorani
+issue_tracker: https://github.com/AkamBarznji/kurdish-sorani/issues
 topics:
   - kurdish
   - localization
