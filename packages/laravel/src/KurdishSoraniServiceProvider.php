@@ -23,8 +23,8 @@ final class KurdishSoraniServiceProvider extends ServiceProvider
         }
 
         Validator::extend('iraqi_phone', static fn ($attribute, $value): bool => is_string($value) && IraqiPhone::isValid($value));
-        Validator::replacer('iraqi_phone', static fn ($message, $attribute) => $message === 'validation.iraqi_phone'
-            ? trans('kurdish-sorani::validation.iraqi_phone')
+        Validator::replacer('iraqi_phone', static fn ($message, $attribute, $rule, $parameters, $validator) => $message === 'validation.iraqi_phone'
+            ? trans('kurdish-sorani::validation.iraqi_phone', ['attribute' => $validator->getDisplayableAttribute($attribute)])
             : $message);
 
         Str::macro('kurdishNormalize', static fn (string $text, bool $finalHeh = false): string => Sorani::normalize($text, $finalHeh));
